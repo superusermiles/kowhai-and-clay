@@ -357,14 +357,14 @@ export function ContactForm() {
         <div className="flex flex-col gap-3 border-t border-iron/10 pt-2 text-sm text-iron/68 sm:flex-row sm:flex-wrap sm:items-center">
           <button
             type="submit"
-            className="inline-flex items-center justify-center rounded-full bg-iron px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:bg-umber disabled:cursor-not-allowed disabled:opacity-70"
+            className="inline-flex items-center justify-center rounded-full border border-umber bg-umber px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:border-[#7b513b] hover:bg-[#7b513b] disabled:cursor-not-allowed disabled:opacity-70"
             disabled={submitState === 'submitting'}
           >
             {submitState === 'submitting' ? 'Sending enquiry…' : 'Send enquiry to the studio'}
           </button>
           <a
             href={draftMailto}
-            className="inline-flex items-center justify-center rounded-full border border-iron/14 px-6 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:text-umber"
+            className="inline-flex items-center justify-center rounded-full border border-clay px-6 py-3 text-sm uppercase tracking-[0.2em] text-umber transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:bg-clay/20 hover:text-umber"
           >
             Review email draft
           </a>
@@ -372,7 +372,7 @@ export function ContactForm() {
             href={instagramUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-iron/14 px-6 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:text-umber"
+            className="inline-flex items-center justify-center rounded-full border border-clay px-6 py-3 text-sm uppercase tracking-[0.2em] text-umber transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:bg-clay/20 hover:text-umber"
           >
             Message on Instagram
           </a>

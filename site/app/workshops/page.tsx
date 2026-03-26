@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Breadcrumbs, InnerPageShell } from "../components";
+import { Breadcrumbs, InnerPageShell, InverseButton } from "../components";
 
 const formats = [
   {
@@ -117,9 +116,9 @@ export default function WorkshopsPage() {
           <p className="mt-5 max-w-2xl text-lg leading-8 text-limestone/82">
             Dates are released in small groups to keep sessions intimate and paced well.
           </p>
-          <Link href="/contact/" className="mt-8 inline-flex rounded-full bg-limestone px-6 py-3 text-sm uppercase tracking-[0.2em] text-iron transition hover:-translate-y-0.5 hover:bg-white">
-            Book a Workshop
-          </Link>
+          <div className="mt-8">
+            <InverseButton href="/contact/" label="Book a Workshop" />
+          </div>
         </div>
       </section>
     </InnerPageShell>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Breadcrumbs, InnerPageShell } from "../components";
+import { Breadcrumbs, InnerPageShell, PrimaryButton } from "../components";
 
 export const metadata: Metadata = {
   title: "About the Raglan Ceramics Studio | Kōwhai & Clay",
@@ -33,12 +32,9 @@ export default function AboutPage() {
               <p className="mt-6 max-w-xl text-lg leading-8 text-iron/76">
                 Kōwhai &amp; Clay began as a way of making handmade ceramic tableware that felt both grounded and gently ceremonial. The studio draws on Raglan&apos;s changing weather, softened shoreline tones, and a preference for objects that improve with daily handling.
               </p>
-              <Link
-                href="/contact/"
-                className="mt-8 inline-flex rounded-full bg-iron px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition hover:-translate-y-0.5 hover:bg-umber"
-              >
-                Commission Enquiry
-              </Link>
+              <div className="mt-8">
+                <PrimaryButton href="/contact/" label="Commission Enquiry" />
+              </div>
             </div>
             <div className="overflow-hidden rounded-[28px] shadow-[0_24px_80px_rgba(40,36,33,0.12)]">
               <img

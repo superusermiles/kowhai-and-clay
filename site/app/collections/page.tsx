@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Breadcrumbs, InnerPageShell } from "../components";
+import { Breadcrumbs, InnerPageShell, OutlineButton, PrimaryButton } from "../components";
 
 const collections = [
   {
@@ -110,9 +109,10 @@ export default function CollectionsPage() {
                 collectors seeking quieter, materially grounded ceramics.
               </p>
             </div>
-            <Link href="/contact/" className="inline-flex rounded-full bg-iron px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition hover:-translate-y-0.5 hover:bg-umber">
-              Start an Enquiry
-            </Link>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <PrimaryButton href="/contact/" label="Start an Enquiry" />
+              <OutlineButton href="/about/" label="Read the Studio Story" />
+            </div>
           </div>
         </div>
       </section>

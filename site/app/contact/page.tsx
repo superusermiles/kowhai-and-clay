@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Breadcrumbs, InnerPageShell } from "../components";
+import { Breadcrumbs, InnerPageShell, OutlineButton, PrimaryButton } from "../components";
 import { ContactForm } from "./contact-form";
 
 const faqs = [
@@ -78,18 +77,8 @@ export default function ContactPage() {
                   <p>By appointment, workshops on selected weekends</p>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Link
-                    href="mailto:hello@kowhaiandclay.co.nz"
-                    className="inline-flex rounded-full bg-iron px-5 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:bg-umber"
-                  >
-                    Email the studio
-                  </Link>
-                  <Link
-                    href="https://instagram.com/kowhaiandclay"
-                    className="inline-flex rounded-full border border-iron/14 px-5 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:text-umber"
-                  >
-                    Follow on Instagram
-                  </Link>
+                  <PrimaryButton href="mailto:hello@kowhaiandclay.co.nz" label="Email the studio" />
+                  <OutlineButton href="https://instagram.com/kowhaiandclay" label="Follow on Instagram" />
                 </div>
               </div>
               <div className="overflow-hidden rounded-[28px] shadow-[0_14px_40px_rgba(40,36,33,0.10)]">

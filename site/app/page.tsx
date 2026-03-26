@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PrimaryButton, SiteFooter, SiteHeader } from "./components";
+import { InverseButton, OutlineButton, PrimaryButton, SiteFooter, SiteHeader } from "./components";
 
 type Cta = {
   href: string;
@@ -100,17 +100,6 @@ export const metadata: Metadata = {
   },
 };
 
-function SecondaryButton({ href, label }: Cta) {
-  return (
-    <Link
-      href={href}
-      className="inline-flex items-center justify-center rounded-full border border-iron/15 px-6 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:border-kowhai hover:bg-white/70"
-    >
-      {label}
-    </Link>
-  );
-}
-
 function SectionIntro({
   eyebrow,
   title,
@@ -150,10 +139,10 @@ function HeroSplitEditorial() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <PrimaryButton href="/collections/" label="View Collections" />
-            <SecondaryButton href="/workshops/" label="Book a Workshop" />
+            <OutlineButton href="/workshops/" label="Book a Workshop" />
           </div>
           <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-clay bg-white/55 px-5 py-3 text-sm text-iron/72 shadow-[0_8px_24px_rgba(40,36,33,0.06)]">
-            <span className="h-2.5 w-2.5 rounded-full bg-kowhai" />
+            <span className="h-2.5 w-2.5 rounded-full bg-umber" />
             Raglan, Aotearoa New Zealand
           </div>
         </div>
@@ -241,7 +230,11 @@ function ImageTextBand({
           {title}
         </h2>
         <p className="mt-5 max-w-xl text-lg leading-8 text-iron/76">{body}</p>
-        {cta ? <div className="mt-8"><SecondaryButton {...cta} /></div> : null}
+        {cta ? (
+          <div className="mt-8">
+            <OutlineButton {...cta} />
+          </div>
+        ) : null}
       </div>
     </div>
   );
@@ -270,12 +263,7 @@ function WorkshopBanner() {
               glazing, and gathering around the worktable.
             </p>
             <div className="mt-8">
-              <Link
-                href="/workshops/"
-                className="inline-flex items-center justify-center rounded-full bg-limestone px-6 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:bg-white"
-              >
-                Explore Workshops
-              </Link>
+              <InverseButton href="/workshops/" label="Explore Workshops" />
             </div>
           </div>
         </div>
@@ -341,7 +329,7 @@ function NewsletterSection() {
                 aria-label="Email address"
               />
             </label>
-            <button className="inline-flex items-center justify-center rounded-full bg-iron px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:bg-umber">
+            <button className="inline-flex items-center justify-center rounded-full border border-umber bg-umber px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:border-[#7b513b] hover:bg-[#7b513b]">
               Subscribe
             </button>
           </form>
@@ -395,7 +383,7 @@ export default function HomePage() {
           <ImageTextBand
             title="The studio works slowly, favouring touch, repetition, and close attention to finish."
             body="Forms are refined through test throws, hand-built adjustments, and glaze trials that respond to changing light. That pace makes room for subtle details: softened rims, iron-speckled surfaces, and pieces that feel calm in the hand."
-            image="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1200&h=900&fit=crop"
+            image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=900&fit=crop"
             cta={{ href: "/about/", label: "Read the Studio Story" }}
           />
         </div>

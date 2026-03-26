@@ -72,6 +72,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 const localBusinessSchema = {
