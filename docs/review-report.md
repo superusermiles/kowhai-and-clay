@@ -10,8 +10,8 @@
 - [ ] No placeholder text
 
 ## Issues Found
-- `site/app/contact/page.tsx:81-83` labels the primary contact form CTA as `Prepare Enquiry`, which reads like unfinished placeholder UX rather than a final production action.
-- `site/app/contact/page.tsx:64-78` renders the enquiry form as static inputs and a textarea with no working submission path, no `name` attributes, and no action handling. This leaves the main commission/workshop conversion flow incomplete.
+- `site/app/contact/page.tsx:64-83` still renders the main enquiry experience as static inputs plus a button, with no `<form>` element, no `name` attributes, no submit handling, and no working action. The primary commission and workshop conversion path remains non-functional in the repo.
+- `site/app/contact/page.tsx:81-83` still uses the CTA copy `Prepare Enquiry`, and the same unfinished wording is still visible on the live page at `/contact/`.
 
 ## Verdict
-The site is live, all required pages exist, the visual direction strongly matches the brief, and the SEO baseline is in place with metadata, robots, sitemap, and LocalBusiness schema. The review still fails because the main contact conversion path is not production-ready: the enquiry form is presented as a functional form, but it is only a static stub and uses unfinished CTA language. Rework should make the form submit properly or replace it with a clear mailto/enquiry flow and final action copy.
+The site is live, all core pages render, the brand and content align well with the brief, and the SEO baseline remains in place with metadata, robots, sitemap, and LocalBusiness schema. The previous fail issue has not been fully fixed. The contact page still presents a production-style enquiry form that does not actually submit anywhere, and the CTA text still reads like unfinished UX. Because the key conversion path for commissions and workshop bookings is still incomplete in both the repo and the live site, this review remains a fail.
