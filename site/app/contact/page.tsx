@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, InnerPageShell } from "../components";
+import { ContactForm } from "./contact-form";
 
 const faqs = [
   {
@@ -59,28 +60,12 @@ export default function ContactPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="rounded-[28px] bg-white/82 p-7 shadow-[0_14px_40px_rgba(40,36,33,0.10)] sm:p-8">
-              <h2 className="font-mono text-xs uppercase tracking-[0.28em] text-umber">Send a note</h2>
-              <div className="mt-6 grid gap-5">
-                <label className="grid gap-2 text-sm text-iron/74">
-                  Name
-                  <input className="rounded-[16px] border border-iron/12 bg-limestone px-4 py-3" />
-                </label>
-                <label className="grid gap-2 text-sm text-iron/74">
-                  Email
-                  <input type="email" className="rounded-[16px] border border-iron/12 bg-limestone px-4 py-3" />
-                </label>
-                <label className="grid gap-2 text-sm text-iron/74">
-                  Project or workshop interest
-                  <input className="rounded-[16px] border border-iron/12 bg-limestone px-4 py-3" />
-                </label>
-                <label className="grid gap-2 text-sm text-iron/74">
-                  Message
-                  <textarea rows={6} className="rounded-[16px] border border-iron/12 bg-limestone px-4 py-3" />
-                </label>
-              </div>
-              <button className="mt-6 rounded-full bg-iron px-6 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition hover:-translate-y-0.5 hover:bg-umber">
-                Prepare Enquiry
-              </button>
+              <h2 className="font-mono text-xs uppercase tracking-[0.28em] text-umber">Send an enquiry</h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-iron/74">
+                Share your project, preferred timing, and contact details below. The form sends directly to the
+                studio inbox, with a ready-to-send email draft available if you prefer to review the wording first.
+              </p>
+              <ContactForm />
             </div>
 
             <div className="space-y-6">
@@ -92,9 +77,20 @@ export default function ContactPage() {
                   <p>@kowhaiandclay</p>
                   <p>By appointment, workshops on selected weekends</p>
                 </div>
-                <Link href="mailto:hello@kowhaiandclay.co.nz" className="mt-6 inline-flex text-sm uppercase tracking-[0.2em] text-iron">
-                  Email the studio
-                </Link>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link
+                    href="mailto:hello@kowhaiandclay.co.nz"
+                    className="inline-flex rounded-full bg-iron px-5 py-3 text-sm uppercase tracking-[0.2em] text-limestone transition duration-300 hover:-translate-y-0.5 hover:bg-umber"
+                  >
+                    Email the studio
+                  </Link>
+                  <Link
+                    href="https://instagram.com/kowhaiandclay"
+                    className="inline-flex rounded-full border border-iron/14 px-5 py-3 text-sm uppercase tracking-[0.2em] text-iron transition duration-300 hover:-translate-y-0.5 hover:border-umber hover:text-umber"
+                  >
+                    Follow on Instagram
+                  </Link>
+                </div>
               </div>
               <div className="overflow-hidden rounded-[28px] shadow-[0_14px_40px_rgba(40,36,33,0.10)]">
                 <img
@@ -104,9 +100,11 @@ export default function ContactPage() {
                 />
               </div>
               <div className="rounded-[28px] bg-white/82 p-7 shadow-[0_8px_24px_rgba(40,36,33,0.06)]">
-                <h2 className="font-mono text-xs uppercase tracking-[0.28em] text-umber">Visit map</h2>
-                <div className="mt-4 flex min-h-[180px] items-center justify-center rounded-[24px] border border-dashed border-iron/18 bg-limestone text-center text-base leading-7 text-iron/60">
-                  Raglan studio visits are arranged by appointment to keep the making schedule calm and intentional.
+                <h2 className="font-mono text-xs uppercase tracking-[0.28em] text-umber">What happens next</h2>
+                <div className="mt-4 space-y-3 text-base leading-7 text-iron/68">
+                  <p>1. Complete the enquiry form with your project, timing, and contact details.</p>
+                  <p>2. Choose the direct studio submission, review the email draft, or continue via Instagram DM.</p>
+                  <p>3. Kōwhai &amp; Clay replies with availability, lead times, and the most suitable next step.</p>
                 </div>
               </div>
             </div>
