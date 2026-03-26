@@ -1,5 +1,5 @@
 # Review Report: Kōwhai & Clay
-**Status: FAIL**
+**Status: PASS**
 **Live URL:** https://kowhai-and-clay.vercel.app
 
 ## Checklist
@@ -7,11 +7,10 @@
 - [x] Content matches brief
 - [x] All pages exist and render
 - [x] SEO baseline met (meta tags, schema)
-- [ ] No placeholder text
+- [x] No placeholder text
 
 ## Issues Found
-- `site/app/contact/page.tsx:64-83` still renders the main enquiry experience as static inputs plus a button, with no `<form>` element, no `name` attributes, no submit handling, and no working action. The primary commission and workshop conversion path remains non-functional in the repo.
-- `site/app/contact/page.tsx:81-83` still uses the CTA copy `Prepare Enquiry`, and the same unfinished wording is still visible on the live page at `/contact/`.
+- None. The contact form completion flow is resolved. The live contact page submits to FormSubmit with a success redirect (`https://kowhai-and-clay.vercel.app/contact/?submitted=true`) and shows a confirmation state after redirect. Review email draft and Instagram fallback actions are also present.
 
 ## Verdict
-The site is live, all core pages render, the brand and content align well with the brief, and the SEO baseline remains in place with metadata, robots, sitemap, and LocalBusiness schema. The previous fail issue has not been fully fixed. The contact page still presents a production-style enquiry form that does not actually submit anywhere, and the CTA text still reads like unfinished UX. Because the key conversion path for commissions and workshop bookings is still incomplete in both the repo and the live site, this review remains a fail.
+PASS. The live Vercel site is accessible, the main pages in the brief are present and render, the content aligns with the editorial ceramics brief, and the SEO baseline is in place through metadata, canonical tags, robots output, and LocalBusiness schema. The contact form completion issue appears fully resolved on the live site: the direct submission path is wired, the success redirect is configured, and the thank-you state is implemented without placeholder or broken completion copy.
