@@ -1,29 +1,97 @@
 {
-  "title": "About | Kōwhai & Clay",
-  "h1": "A practice shaped by coastal light, practical objects, and quiet variation.",
+  "title": "About the Raglan Ceramics Studio | Kōwhai & Clay",
+  "h1": "About Kōwhai & Clay, a handmade ceramics studio in Raglan.",
   "nav": [
+    {
+      "text": "Kōwhai & Clay",
+      "href": "/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    },
     {
       "text": "Commission Enquiry",
       "href": "/contact/"
+    },
+    {
+      "text": "Enquire",
+      "href": "/contact/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Commission Enquiry",
+      "href": "/contact/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "text": "hello@kowhaiandclay.co.nz",
+      "href": "mailto:hello@kowhaiandclay.co.nz"
     }
   ],
   "imgs": [
     {
-      "alt": "Founder portrait substitute in warm natural light for studio story",
+      "alt": "Founder portrait representing the Kōwhai and Clay handmade ceramics studio in Raglan",
       "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1000&h=1200&fit=crop",
       "ok": true,
       "w": 1000,
       "h": 1200
     },
     {
-      "alt": "Studio shelves and interior mood with curated ceramics and natural textures",
+      "alt": "Shelves of handmade ceramics in a calm Raglan studio interior at Kōwhai and Clay",
       "src": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200&h=800&fit=crop",
       "ok": true,
       "w": 1200,
       "h": 800
     },
     {
-      "alt": "Materials and interior detail image reflecting clay, linen, and natural texture",
+      "alt": "Natural materials and handmade pottery textures inspiring the Raglan ceramics studio palette",
       "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&h=1100&fit=crop",
       "ok": true,
       "w": 900,
@@ -34,7 +102,7 @@
   "bodyColor": "rgb(40, 36, 33)",
   "headingFont": "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\"",
   "bodyFont": "Manrope, \"Manrope Fallback\", sans-serif",
-  "hasSvgLogo": false,
+  "hasSvgLogo": true,
   "menuButton": false,
   "faqButtons": []
 }

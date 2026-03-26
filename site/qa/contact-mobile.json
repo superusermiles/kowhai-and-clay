@@ -1,22 +1,106 @@
 {
-  "title": "Contact | Kōwhai & Clay",
-  "h1": "For commissions, workshops, and studio appointments.",
+  "title": "Contact the Raglan Ceramics Studio | Kōwhai & Clay",
+  "h1": "Contact the Raglan ceramics studio for commissions, workshops, and appointments.",
   "nav": [
     {
+      "text": "Kōwhai & Clay",
+      "href": "/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "text": "Commission Enquiry",
+      "href": "/contact/"
+    },
+    {
+      "text": "Enquire",
+      "href": "/contact/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Review email draft",
+      "href": "mailto:hello@kowhaiandclay.co.nz?subject=Commission%20enquiry%20%E2%80%94%20New%20enquiry&body=Name%3A%20%0AEmail%3A%20%0AEnquiry%20type%3A%20Commission%20enquiry%0AProject%20or%20workshop%20interest%3A%20%0ADesired%20timing%3A%20Just%20exploring%0ABudget%20range%3A%20NZ%24500%E2%80%931%2C500%0APreferred%20contact%20method%3A%20Email%0A%0AProject%20details%3A%0A"
+    },
+    {
+      "text": "Message on Instagram",
+      "href": "https://instagram.com/kowhaiandclay"
+    },
+    {
+      "text": "hello@kowhaiandclay.co.nz",
+      "href": "mailto:hello@kowhaiandclay.co.nz"
+    },
+    {
       "text": "Email the studio",
+      "href": "mailto:hello@kowhaiandclay.co.nz"
+    },
+    {
+      "text": "Follow on Instagram",
+      "href": "https://instagram.com/kowhaiandclay"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "text": "hello@kowhaiandclay.co.nz",
       "href": "mailto:hello@kowhaiandclay.co.nz"
     }
   ],
   "imgs": [
     {
-      "alt": "Warm contact banner image with styled ceramics and natural light",
+      "alt": "Handmade ceramics contact banner with warm natural light and studio styling",
       "src": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1400&h=800&fit=crop",
       "ok": true,
       "w": 1400,
       "h": 800
     },
     {
-      "alt": "Studio exterior or interior mood image supporting contact page",
+      "alt": "Handmade ceramic tableware image supporting contact details for Kōwhai and Clay in Raglan",
       "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&h=900&fit=crop",
       "ok": true,
       "w": 900,
@@ -27,9 +111,9 @@
   "bodyColor": "rgb(40, 36, 33)",
   "headingFont": "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\"",
   "bodyFont": "Manrope, \"Manrope Fallback\", sans-serif",
-  "hasSvgLogo": false,
+  "hasSvgLogo": true,
   "menuButton": false,
   "faqButtons": [
-    "Prepare Enquiry"
+    "Send enquiry to the studio"
   ]
 }
