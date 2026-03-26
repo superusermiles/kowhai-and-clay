@@ -1,49 +1,60 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs, InnerPageShell } from "../components";
 
 const collections = [
   {
     title: "Everyday Forms",
-    text: "Cups, bowls, and plates with softened profiles for daily routines and slower breakfasts.",
+    text: "Handmade ceramic cups, bowls, and plates with softened profiles for daily routines and slower breakfasts.",
     image: "https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&h=1100&fit=crop",
   },
   {
     title: "Shoreline Serving",
-    text: "Serving platters and open vessels that carry a washed, coastal palette with quiet weight.",
+    text: "Serving platters and open ceramic vessels that carry a washed coastal palette with quiet weight.",
     image: "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?w=900&h=1100&fit=crop",
   },
   {
     title: "Kōwhai Season",
-    text: "Short-run vessels and bud forms tuned to spring stems, pollen tones, and lighter tabletops.",
+    text: "Short-run ceramic vessels and bud forms tuned to spring stems, pollen tones, and lighter tabletops.",
     image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=900&h=1100&fit=crop",
   },
   {
     title: "Fired Earth Editions",
-    text: "Richer iron finishes and darker silhouettes intended for shelves, consoles, and gathered rooms.",
+    text: "Richer iron finishes and darker ceramic silhouettes intended for shelves, consoles, and gathered rooms.",
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&h=1100&fit=crop",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Collections",
+  title: "Ceramic Collections in Raglan | Kōwhai & Clay",
   description:
-    "Browse Kōwhai & Clay ceramic collections, from everyday forms to seasonal vessels and bespoke commissions.",
+    "Browse handmade ceramic collections from Kōwhai & Clay in Raglan, including ceramic tableware, sculptural vessels, and bespoke ceramic commissions.",
+  keywords: [
+    "handmade ceramic collections Raglan",
+    "Raglan ceramic tableware",
+    "sculptural ceramic vessels NZ",
+    "bespoke ceramics Raglan",
+    "small-batch ceramics Waikato",
+  ],
+  alternates: {
+    canonical: "/collections/",
+  },
 };
 
 export default function CollectionsPage() {
   return (
-    <main className="bg-limestone text-iron">
+    <InnerPageShell>
       <section className="relative h-[480px]">
         <img
           src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=1600&h=800&fit=crop"
-          alt="Ceramic collection hero arranged in a warm editorial interior"
+          alt="Handmade ceramic collections from the Raglan studio arranged in a warm editorial interior"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-iron/40" />
         <div className="relative mx-auto flex h-full max-w-[1280px] flex-col justify-end px-5 py-12 text-limestone sm:px-8 lg:px-10 lg:py-16">
           <p className="font-mono text-xs uppercase tracking-[0.28em] text-limestone/75">Collections</p>
           <h1 className="mt-4 max-w-3xl font-heading text-5xl leading-[0.98] sm:text-6xl">
-            Forms for daily use, gathered tables, and rooms that favour texture.
+            Handmade ceramic collections in Raglan for daily use, gathered tables, and textured interiors.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-limestone/84">
             Releases stay intentionally small. Each collection explores a mood, a glaze family, and
@@ -53,12 +64,15 @@ export default function CollectionsPage() {
       </section>
 
       <section className="px-5 py-12 sm:px-8 lg:px-10 lg:py-16">
-        <div className="mx-auto flex max-w-[1280px] flex-wrap gap-3">
-          {['Everyday', 'Serving', 'Seasonal', 'Sculptural', 'Commissionable'].map((tag) => (
-            <span key={tag} className="rounded-full border border-iron/12 bg-white/70 px-4 py-2 text-sm text-iron/78">
-              {tag}
-            </span>
-          ))}
+        <div className="mx-auto max-w-[1280px]">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Collections" }]} />
+          <div className="flex flex-wrap gap-3">
+            {["Everyday", "Serving", "Seasonal", "Sculptural", "Commissionable"].map((tag) => (
+              <span key={tag} className="rounded-full border border-iron/12 bg-white/70 px-4 py-2 text-sm text-iron/78">
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -69,7 +83,7 @@ export default function CollectionsPage() {
               <div className="overflow-hidden">
                 <img
                   src={collection.image}
-                  alt={`${collection.title} ceramic range styled in a warm interior context`}
+                  alt={`${collection.title} handmade ceramic collection from Kōwhai and Clay in Raglan, Waikato`}
                   className="h-[340px] w-full object-cover transition duration-500 hover:scale-[1.03]"
                 />
               </div>
@@ -89,7 +103,7 @@ export default function CollectionsPage() {
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-umber">Bespoke commissions</p>
               <h2 className="mt-4 font-heading text-4xl leading-tight sm:text-5xl">
-                Need a considered run of table pieces, vessels, or objects for a project?
+                Need a considered run of handmade ceramic tableware, vessels, or objects for a project?
               </h2>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-iron/76">
                 The studio works on limited commission briefs for interiors, hospitality, and private
@@ -102,6 +116,6 @@ export default function CollectionsPage() {
           </div>
         </div>
       </section>
-    </main>
+    </InnerPageShell>
   );
 }

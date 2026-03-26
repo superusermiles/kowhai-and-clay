@@ -1,0 +1,35 @@
+{
+  "title": "Contact | Kōwhai & Clay",
+  "h1": "For commissions, workshops, and studio appointments.",
+  "nav": [
+    {
+      "text": "Email the studio",
+      "href": "mailto:hello@kowhaiandclay.co.nz"
+    }
+  ],
+  "imgs": [
+    {
+      "alt": "Warm contact banner image with styled ceramics and natural light",
+      "src": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1400&h=800&fit=crop",
+      "ok": true,
+      "w": 1400,
+      "h": 800
+    },
+    {
+      "alt": "Studio exterior or interior mood image supporting contact page",
+      "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&h=900&fit=crop",
+      "ok": true,
+      "w": 900,
+      "h": 900
+    }
+  ],
+  "bodyBg": "rgb(243, 238, 230)",
+  "bodyColor": "rgb(40, 36, 33)",
+  "headingFont": "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\"",
+  "bodyFont": "Manrope, \"Manrope Fallback\", sans-serif",
+  "hasSvgLogo": false,
+  "menuButton": false,
+  "faqButtons": [
+    "Prepare Enquiry"
+  ]
+}

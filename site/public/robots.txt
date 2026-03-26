@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kowhai-and-clay.vercel.app/sitemap.xml
+Host: https://kowhai-and-clay.vercel.app

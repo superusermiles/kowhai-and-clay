@@ -25,23 +25,26 @@ const ogImage =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: {
-    default: "Kōwhai & Clay | Ceramics shaped by coast, clay, and quiet ritual",
-    template: "%s | Kōwhai & Clay",
-  },
+  title: "Kōwhai & Clay | Handmade Ceramics Studio & Pottery Workshops in Raglan",
   description:
-    "Kōwhai & Clay is a Raglan ceramics studio creating small-batch tableware, sculptural vessels, and tactile workshops for thoughtful homes.",
+    "Kōwhai & Clay is a Raglan ceramics studio creating handmade ceramic tableware, sculptural vessels, pottery workshops, and custom hospitality ceramics in Waikato.",
   keywords: [
+    "handmade ceramics Raglan",
+    "Raglan ceramics studio",
+    "pottery workshops Raglan",
+    "Waikato pottery workshop",
+    "custom hospitality ceramics New Zealand",
+    "handmade ceramic tableware NZ",
+    "small-batch ceramics Waikato",
+    "sculptural ceramic vessels New Zealand",
+    "ceramic commissions Raglan",
+    "Raglan pottery studio",
     "Kōwhai & Clay",
-    "Raglan ceramics",
-    "New Zealand pottery",
-    "ceramics workshops",
-    "small-batch tableware",
   ],
   openGraph: {
-    title: "Kōwhai & Clay",
+    title: "Kōwhai & Clay | Handmade Ceramics Studio & Pottery Workshops in Raglan",
     description:
-      "Ceramics shaped by coast, clay, and quiet ritual from a studio in Raglan, Aotearoa New Zealand.",
+      "Explore handmade ceramic tableware, sculptural vessels, pottery workshops, and custom ceramic commissions from Kōwhai & Clay in Raglan, New Zealand.",
     url: siteUrl,
     siteName: "Kōwhai & Clay",
     locale: "en_NZ",
@@ -51,38 +54,45 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 1500,
-        alt: "Handcrafted ceramic vessels arranged in warm natural light",
+        alt: "Handmade ceramic vessels from the Kōwhai and Clay Raglan ceramics studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kōwhai & Clay",
+    title: "Kōwhai & Clay | Handmade Ceramics Studio & Pottery Workshops in Raglan",
     description:
-      "Small-batch tableware, sculptural vessels, and tactile workshops from Raglan.",
+      "Handmade ceramic tableware, sculptural vessels, commissions, and pottery workshops from Raglan, Waikato.",
     images: [ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: siteUrl,
   },
 };
 
-const organizationSchema = {
+const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
   name: "Kōwhai & Clay",
-  url: siteUrl,
   image: ogImage,
   description:
-    "Ceramics studio in Raglan, Waikato creating small-batch tableware, sculptural vessels, and workshops.",
+    "Handmade ceramics studio in Raglan, Waikato offering small-batch tableware, sculptural vessels, custom commissions, and pottery workshops.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Raglan",
     addressRegion: "Waikato",
     addressCountry: "NZ",
   },
+  telephone: "+64 21 000 0000",
   email: "hello@kowhaiandclay.co.nz",
+  url: siteUrl,
   sameAs: ["https://instagram.com/kowhaiandclay"],
+  areaServed: "New Zealand",
+  priceRange: "$$",
 };
 
 export default function RootLayout({
@@ -99,7 +109,7 @@ export default function RootLayout({
         {children}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </body>
     </html>

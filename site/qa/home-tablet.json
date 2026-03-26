@@ -1,0 +1,187 @@
+{
+  "title": "Home",
+  "h1": "Ceramics shaped by coast, clay, and quiet ritual.",
+  "nav": [
+    {
+      "text": "Kōwhai & Clay",
+      "href": "/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "text": "Commission Enquiry",
+      "href": "/contact/"
+    },
+    {
+      "text": "Enquire",
+      "href": "/contact/"
+    },
+    {
+      "text": "View Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Book a Workshop",
+      "href": "/workshops/"
+    },
+    {
+      "text": "ED-01Everyday FormsSoft-rimmed bowls, cups, and plates designed for daily use and quieter tables.",
+      "href": "/collections/"
+    },
+    {
+      "text": "TO-02Table ObjectsServing pieces and centre-table vessels with limestone glazes and smoke-toned finishes.",
+      "href": "/collections/"
+    },
+    {
+      "text": "SV-03Seasonal VesselsShort runs shaped by kōwhai bloom, coastal winds, and the pace of the studio kiln.",
+      "href": "/collections/"
+    },
+    {
+      "text": "Read the Studio Story",
+      "href": "/about/"
+    },
+    {
+      "text": "Explore Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Read Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Read Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Read Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "About",
+      "href": "/about/"
+    },
+    {
+      "text": "Collections",
+      "href": "/collections/"
+    },
+    {
+      "text": "Workshops",
+      "href": "/workshops/"
+    },
+    {
+      "text": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "imgs": [
+    {
+      "alt": "Tall ceramic vessels displayed in warm natural studio light",
+      "src": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=1200&h=1500&fit=crop",
+      "ok": true,
+      "w": 1200,
+      "h": 1500
+    },
+    {
+      "alt": "Ceramic vessels and natural styling in a close cropped arrangement",
+      "src": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=700&h=900&fit=crop",
+      "ok": true,
+      "w": 700,
+      "h": 900
+    },
+    {
+      "alt": "Everyday Forms ceramic collection presented in a warm styled setting",
+      "src": "https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?w=900&h=1100&fit=crop",
+      "ok": true,
+      "w": 900,
+      "h": 1100
+    },
+    {
+      "alt": "Table Objects ceramic collection presented in a warm styled setting",
+      "src": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=900&h=700&fit=crop",
+      "ok": true,
+      "w": 900,
+      "h": 700
+    },
+    {
+      "alt": "Seasonal Vessels ceramic collection presented in a warm styled setting",
+      "src": "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=700&h=900&fit=crop",
+      "ok": true,
+      "w": 700,
+      "h": 900
+    },
+    {
+      "alt": "Hands shaping clay in a tactile studio process",
+      "src": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=900&fit=crop",
+      "ok": true,
+      "w": 1200,
+      "h": 900
+    },
+    {
+      "alt": "Creative workshop environment with warm natural light and handmade materials",
+      "src": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1600&h=900&fit=crop",
+      "ok": true,
+      "w": 1600,
+      "h": 900
+    },
+    {
+      "alt": "Setting a slower morning table editorial image featuring ceramics and natural styling",
+      "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=1000&fit=crop",
+      "ok": true,
+      "w": 800,
+      "h": 1000
+    },
+    {
+      "alt": "Objects that hold warmth editorial image featuring ceramics and natural styling",
+      "src": "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&h=1000&fit=crop",
+      "ok": true,
+      "w": 800,
+      "h": 1000
+    },
+    {
+      "alt": "The brief life of seasonal stems editorial image featuring ceramics and natural styling",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=1000&fit=crop",
+      "ok": true,
+      "w": 800,
+      "h": 1000
+    }
+  ],
+  "bodyBg": "rgb(243, 238, 230)",
+  "bodyColor": "rgb(40, 36, 33)",
+  "headingFont": "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\"",
+  "bodyFont": "Manrope, \"Manrope Fallback\", sans-serif",
+  "hasSvgLogo": true,
+  "menuButton": false,
+  "faqButtons": [
+    "Subscribe"
+  ]
+}
