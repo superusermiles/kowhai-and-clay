@@ -10,7 +10,7 @@
 - [x] No placeholder text
 
 ## Issues Found
-- None. The contact form completion flow is resolved. The live contact page submits to FormSubmit with a success redirect (`https://kowhai-and-clay.vercel.app/contact/?submitted=true`) and shows a confirmation state after redirect. Review email draft and Instagram fallback actions are also present.
+None.
 
 ## Verdict
-PASS. The live Vercel site is accessible, the main pages in the brief are present and render, the content aligns with the editorial ceramics brief, and the SEO baseline is in place through metadata, canonical tags, robots output, and LocalBusiness schema. The contact form completion issue appears fully resolved on the live site: the direct submission path is wired, the success redirect is configured, and the thank-you state is implemented without placeholder or broken completion copy.
+PASS. The live site is accessible and all core pages render at the expected routes. The content aligns with the brief and design direction for a premium, editorial ceramics studio in Raglan, including commissions, workshops, collections, journal, and contact flows. SEO basics are in place through page metadata, canonical tags, robots handling, and LocalBusiness schema in `site/app/layout.tsx`. The contact form rework is present in `site/app/contact/contact-form.tsx`, including direct submission, success redirect handling, validation, and a visible completion message.
